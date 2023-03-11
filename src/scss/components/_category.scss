@@ -1,0 +1,48 @@
+@import 'utils/vars';
+@import 'utils/mixins';
+
+.category {
+  &__list {
+    padding: 16px;
+    width: auto;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  &__card {
+    cursor: pointer;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    @include size(240px, 160px);
+
+    &:hover {
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.1);
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+  }
+
+  &__link {
+    list-style-type: none;
+    text-decoration: none;
+    color: #1b1c21;
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+
+      bottom: 16px;
+      right: 16px;
+
+      content: '';
+      border: 2px solid #ff3e79;
+      border-radius: 50%;
+      background-image: url(../img/dropdown.svg);
+      width: 35px;
+      height: 35px;
+      @include backgroundRepeatPosition(no-repeat, center);
+    }
+  }
+}

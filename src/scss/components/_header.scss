@@ -1,0 +1,23 @@
+.header {
+  background-color: #fff;
+
+  &__nav {
+    padding: 18px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1018px) {
+  .header {
+    display: none;
+  }
+}

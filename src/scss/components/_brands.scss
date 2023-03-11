@@ -1,0 +1,48 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+.brands {
+  overflow: hidden;
+
+  &__list {
+    padding: 16px;
+    width: auto;
+    color: #666;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  &__card {
+    width: 240px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.02);
+
+    &:hover {
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.1);
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    text-decoration: none;
+    color: #666;
+
+    &::after {
+      display: inline-block;
+      content: '';
+      border: 2px solid #ff3e79;
+      border-radius: 50%;
+      background-image: url(../img/dropdown.svg);
+      @include backgroundRepeatPosition(no-repeat, center);
+      @include size(35px, 35px);
+    }
+  }
+}

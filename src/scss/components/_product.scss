@@ -1,0 +1,70 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+.product {
+  &__list {
+    padding: 16px;
+    width: auto;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-areas:
+      'repair repair repair'
+      'price price price'
+      'date date order-button';
+
+    cursor: pointer;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    @include size(240px, 200px);
+
+    &:hover {
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.1);
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+  }
+}
+
+.order-button {
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #ff3e79;
+  color: #ffffff;
+  @include size(120px, 32px);
+
+  &:hover {
+    background-color: #ab2a51;
+  }
+}
+
+.name {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7e7e82;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.reapir {
+  grid-area: repair;
+}
+
+.price {
+  grid-area: price;
+}
+
+.date {
+  grid-area: date;
+}
