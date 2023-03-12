@@ -46,3 +46,25 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .category {
+    &__inner {
+      max-height: 200px;
+      transition: 0.2s ease-in-out;
+    }
+
+    &__inner--toogle {
+      max-height: 100vh;
+    }
+
+    &__list {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+}

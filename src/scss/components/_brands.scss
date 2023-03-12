@@ -6,6 +6,7 @@
 
   &__list {
     padding: 16px;
+    margin: 0;
     width: auto;
     color: #666;
     text-decoration: none;
@@ -44,5 +45,33 @@
       @include backgroundRepeatPosition(no-repeat, center);
       @include size(35px, 35px);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brands {
+    &__inner {
+      max-height: 182px;
+      transition: 0.2s ease-in-out;
+    }
+
+    &__inner--toogle {
+      max-height: 100vh;
+    }
+
+    &__list {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .brands__card {
+    width: 240px;
   }
 }

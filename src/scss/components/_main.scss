@@ -169,6 +169,10 @@
   margin-right: 0;
 }
 
+.margin-left {
+  margin-left: 16px;
+}
+
 .display-block {
   display: none;
 }
@@ -199,4 +203,8 @@
   .display-none {
     display: none;
   }
+}
+
+.swiper-pagination {
+  position: relative;
 }
