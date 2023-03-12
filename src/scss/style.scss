@@ -23,3 +23,26 @@ body {
   margin: 0 auto;
   background-color: $wrapperMainColor;
 }
+
+@media (min-width: 1200px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 620px;
+    height: auto;
+    box-shadow: none;
+    transform: translateX(0);
+  }
+
+  .sidebar__menu {
+    margin-bottom: 100px;
+  }
+
+  .button--none {
+    display: none;
+  }
+}

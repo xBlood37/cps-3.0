@@ -30,6 +30,14 @@
   @include backgroundRepeatPosition(no-repeat, center);
 }
 
+.close {
+  background-image: url('/img/close.svg');
+}
+
+.search {
+  background-image: url('/img/search.svg');
+}
+
 .burger {
   background-image: url('/img/burger.svg');
 }
