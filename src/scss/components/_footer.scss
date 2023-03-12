@@ -13,3 +13,17 @@
     color: $copyColor;
   }
 }
+
+@media (min-width: 768px) {
+  .footer {
+    &__inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__copy {
+      margin: 0;
+    }
+  }
+}

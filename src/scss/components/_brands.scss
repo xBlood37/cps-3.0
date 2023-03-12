@@ -14,7 +14,6 @@
   }
 
   &__card {
-    width: 240px;
     cursor: pointer;
     background: #ffffff;
     border: 1px solid #eaeaea;
@@ -48,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .brands {
     &__inner {
       max-height: 182px;
@@ -56,7 +55,7 @@
     }
 
     &__inner--toogle {
-      max-height: 100vh;
+      max-height: 100%;
     }
 
     &__list {
@@ -70,7 +69,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .brands__card {
     width: 240px;
   }
