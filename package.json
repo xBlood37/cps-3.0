@@ -2,6 +2,11 @@
   "name": "web-last-block",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xBlood37/cps-3.0.git"
+  },
+  "homepage": "http://xBlood37.github.io/cps-3.0",
   "keywords": [
     "web",
     "scss",

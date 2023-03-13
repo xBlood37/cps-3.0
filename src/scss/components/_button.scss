@@ -37,41 +37,41 @@
 }
 
 .close {
-  background-image: url('/img/close.svg');
+  background-image: url('./img/close.svg');
 }
 
 .search {
-  background-image: url('/img/search.svg');
+  background-image: url('./img/search.svg');
 }
 
 .burger {
-  background-image: url('/img/burger.svg');
+  background-image: url('./img/burger.svg');
 }
 
 .chat {
-  background-image: url('/img/chat.svg');
+  background-image: url('./img/chat.svg');
 }
 
 .profile {
-  background-image: url('/img/profile.svg');
+  background-image: url('./img/profile.svg');
 }
 
 .repair {
-  background-image: url('/img/repair.svg');
+  background-image: url('./img/repair.svg');
 }
 
 .checklist {
-  background-image: url('/img/checklist.svg');
+  background-image: url('./img/checklist.svg');
 }
 
 .call {
-  background-image: url('/img/call.svg');
+  background-image: url('./img/call.svg');
 }
 
 .logo {
   display: inline-block;
   @include size(98px, 52px);
-  background-image: url('/img/group.svg');
+  background-image: url('./img/group.svg');
 }
 
 .divider {
