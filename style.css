@@ -381,36 +381,6 @@
   background-repeat: no-repeat;
   background-position: center; }
 
-.close {
-  background-image: url("/img/close.svg"); }
-
-.search {
-  background-image: url("/img/search.svg"); }
-
-.burger {
-  background-image: url("/img/burger.svg"); }
-
-.chat {
-  background-image: url("/img/chat.svg"); }
-
-.profile {
-  background-image: url("/img/profile.svg"); }
-
-.repair {
-  background-image: url("/img/repair.svg"); }
-
-.checklist {
-  background-image: url("/img/checklist.svg"); }
-
-.call {
-  background-image: url("/img/call.svg"); }
-
-.logo {
-  display: inline-block;
-  width: 98px;
-  height: 52px;
-  background-image: url("/img/group.svg"); }
-
 .divider {
   display: inline-block;
   content: ' ';
@@ -927,6 +897,36 @@ body {
     margin-bottom: 100px; }
   .button--none {
     display: none; } }
+
+.close {
+  background-image: url(./static/close.svg); }
+
+.search {
+  background-image: url(./static/search.svg); }
+
+.burger {
+  background-image: url(./static/burger.svg); }
+
+.chat {
+  background-image: url(./static/chat.svg); }
+
+.profile {
+  background-image: url(./static/profile.svg); }
+
+.repair {
+  background-image: url(./static/repair.svg); }
+
+.checklist {
+  background-image: url(./static/checklist.svg); }
+
+.call {
+  background-image: url(./static/call.svg); }
+
+.logo {
+  display: inline-block;
+  width: 98px;
+  height: 52px;
+  background-image: url(./static/group.svg); }
 
 
 /*# sourceMappingURL=style.css.map*/
