@@ -9,12 +9,42 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- модалка заказать звонок -->
+      <aside class="get-call">
+        <button class="button close button--position" id="call-close"></button>
+        <div class="get-call__inner">
+          <h1 class="h1">Заказать звонок</h1>
+          <form class="form" action="#" method="post">
+            <input class="form__input" placeholder="Имя" type="text" name="" id="" />
+            <input class="form__input" placeholder="Телефон" type="text" name="" id="" />
+            <p class="text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+            <button class="order-button"> Отправить </button>
+          </form>
+        </div>
+      </aside>
+      <!-- модалка заказать звонок -->
+      <!-- модалка обратная свзяь -->
+      <aside class="feedback">
+        <button class="button close button--position" id="form-close"></button>
+        <div class="feedback__inner">
+          <h1 class="h1">Обратная связь</h1>
+          <form class="form" action="#" method="post">
+            <input class="form__input" placeholder="Имя" type="text" name="" id="" />
+            <input class="form__input" placeholder="Телефон" type="text" name="" id="" />
+            <input class="form__input" placeholder="Электронная почта" type="text" name="" id="" />
+            <input class="form__input" placeholder="Сообщение" type="text" name="" id="" />
+            <p class="text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+            <button class="order-button"> Отправить </button>
+          </form>
+        </div>
+      </aside>
+      <!-- модалка обратная свзяь -->
       <!-- меню слева -->
       <aside class="sidebar">
         <div class="sidebar__inner">
           <header class="sidebar-header">
             <div class="sidebar-header__inner">
-              <button class="button button--none close"></button>
+              <button class="button button--none close" id="sidebar-close"></button>
               <a href="" class="logo margin-right--auto"></a>
               <button class="button search"></button>
             </div>
@@ -85,10 +115,10 @@
               <a href="" class="logo"></a>
             </li>
             <li class="header__item display-block">
-              <button class="button call"></button>
+              <button class="button call" id="call"></button>
             </li>
             <li class="header__item display-block">
-              <button class="button chat"></button>
+              <button class="button chat" id="chat"></button>
             </li>
             <li class="header__item display-block">
               <button class="button profile"></button>

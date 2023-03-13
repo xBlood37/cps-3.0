@@ -1,5 +1,5 @@
 const burger = document.querySelector('.burger')
-const sidebarClose = document.querySelector('.close')
+const sidebarClose = document.querySelector('#sidebar-close')
 const sidebar = document.querySelector('.sidebar')
 
 function burgerMenu() {
