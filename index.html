@@ -42,9 +42,17 @@
         <div class="sidebar__inner">
           <header class="sidebar-header">
             <div class="sidebar-header__inner">
-              <button class="button close button--none" id="sidebar-close"></button>
-              <a href="" class="logo margin-right--auto"></a>
-              <button class="button search"></button>
+              <ul class="sidebar-header__list">
+                <li class="sidebar-header__item">
+                  <button class="button close" id="sidebar-close"></button>
+                </li>
+                <li class="sidebar-header__item">
+                  <a href="" class="logo"></a>
+                </li>
+                <li class="sidebar-header__item">
+                  <button class="button search"></button>
+                </li>
+              </ul>
             </div>
           </header>
           <div class="sidebar__menu">
@@ -91,38 +99,35 @@
           <a class="email" href="mailto:mail@cps.com">mail@cps.com</a>
           <a class="number" href="tel:8 800 890 8900">8 800 890 8900</a>
           <div class="lang">
-            <div class="lang__item">
-              <button class="lang__button">RU</button>
-              <button class="lang__button">EN</button>
-              <button class="lang__button">ЧЕ?</button>
+            <div class="lang__inner">
+              <button class="lang__button"></button>
+              <button class="lang__button"></button>
+              <button class="lang__button"></button>
             </div>
           </div>
         </div>
       </aside>
-      <header class="header header--block">
+      <header class="header">
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
               <button class="button burger"></button>
             </li>
-            <li class="header__item display-block">
-              <span class="divider"></span>
-            </li>
-            <li class="header__item margin-right">
+            <li class="header__item"> </li>
+            <li class="header__item">
               <a href="" class="logo"></a>
             </li>
-            <li class="header__item display-block">
+            <li class="header__item"> </li>
+            <li class="header__item">
               <button class="button call"></button>
             </li>
-            <li class="header__item display-block">
+            <li class="header__item">
               <button class="button chat"></button>
             </li>
-            <li class="header__item display-block">
+            <li class="header__item">
               <button class="button profile"></button>
             </li>
-            <li class="header__item">
-              <span class="divider"></span>
-            </li>
+            <li class="header__item"> </li>
             <li class="header__item">
               <button class="button repair"></button>
             </li>
@@ -139,11 +144,9 @@
             <div class="title__button">
               <ul class="title__list">
                 <li class="title__item">
-                  <span class="text">Оставить заявку</span>
                   <button class="button repair"></button>
                 </li>
                 <li class="title__item">
-                  <span class="text">Статус ремонта</span>
                   <button class="button checklist"></button>
                 </li>
               </ul>
@@ -168,11 +171,6 @@
               <li class="scroll__item">
                 <a href="" class="scroll__link">Специальные цены</a>
               </li>
-              <li class="scroll__item display-none">
-                <a href="" class="scroll__link">Отзывы</a>
-              </li>
-            </ul>
-            <ul class="scroll__list display-block--1000">
               <li class="scroll__item">
                 <a href="" class="scroll__link">Отзывы</a>
               </li>
@@ -183,9 +181,9 @@
           <div class="post__inner">
             <div class="post__text">
               <p class="text"> Мы являемся авторизованным сервисным центром по ремонту котиков Dell. Только у нас вы можете отремонтировать своего котика Dell с официальной гарантией производителя. </p>
-              <br class="display-block">
-              <p class="text display-block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-              <p class="text display-block">что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+              <br class="text">
+              <p class="text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+              <p class="text">что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
               <button class="more">Читать далее</button>
             </div>
             <img class="background" src="./img/bg.png" alt="">
@@ -243,7 +241,7 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button class="more display-block margin-left" id="brands">Показать все</button>
+          <button class="more" id="brands">Показать все</button>
         </div>
         <h2 class="h2">Ремонт различных видов котиков</h2>
         <div class="category">
@@ -297,85 +295,46 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button class="more display-block margin-left" id="category">Показать все</button>
+          <button class="more" id="category">Показать все</button>
         </div>
         <h2 class="h2">Цены на услуги</h2>
         <div class="product">
           <div class="product__inner swiper">
             <ul class="product__list swiper-wrapper">
               <li class="product__card swiper-slide">
-                <div class="reapir">
-                  <span class="name"> Ремонтные услуги </span>
-                  <span class="description"> Тестирование с выдачей технического заключения </span>
-                </div>
-                <div class="price">
-                  <span class="name"> Цена </span>
-                  <span class="description"> Бесплатно </span>
-                </div>
-                <div class="date">
-                  <span class="name"> Срок </span>
-                  <span class="description"> 30-120 мин </span>
-                </div>
+                <span class="product__reapir"> </span>
+                <span class="product__price"> </span>
+                <span class="product__date"> </span>
                 <button class="order-button"> Заказать </button>
               </li>
               <li class="product__card swiper-slide">
-                <div class="reapir">
-                  <span class="name"> Ремонтные услуги </span>
-                  <span class="description"> Тестирование с выдачей технического заключения </span>
-                </div>
-                <div class="price">
-                  <span class="name"> Цена </span>
-                  <span class="description"> Бесплатно </span>
-                </div>
-                <div class="date">
-                  <span class="name"> Срок </span>
-                  <span class="description"> 30-120 мин </span>
-                </div>
+                <span class="product__reapir"> </span>
+                <span class="product__price"> </span>
+                <span class="product__date"> </span>
                 <button class="order-button"> Заказать </button>
               </li>
               <li class="product__card swiper-slide">
-                <div class="reapir">
-                  <span class="name"> Ремонтные услуги </span>
-                  <span class="description"> Тестирование с выдачей технического заключения </span>
-                </div>
-                <div class="price">
-                  <span class="name"> Цена </span>
-                  <span class="description"> Бесплатно </span>
-                </div>
-                <div class="date">
-                  <span class="name"> Срок </span>
-                  <span class="description"> 30-120 мин </span>
-                </div>
+                <span class="product__reapir"> </span>
+                <span class="product__price"> </span>
+                <span class="product__date"> </span>
                 <button class="order-button"> Заказать </button>
               </li>
               <li class="product__card swiper-slide">
-                <div class="reapir">
-                  <span class="name"> Ремонтные услуги </span>
-                  <span class="description"> Тестирование с выдачей технического заключения </span>
-                </div>
-                <div class="price">
-                  <span class="name"> Цена </span>
-                  <span class="description"> Бесплатно </span>
-                </div>
-                <div class="date">
-                  <span class="name"> Срок </span>
-                  <span class="description"> 30-120 мин </span>
-                </div>
+                <span class="product__reapir"> </span>
+                <span class="product__price"> </span>
+                <span class="product__date"> </span>
                 <button class="order-button"> Заказать </button>
               </li>
               <li class="product__card swiper-slide">
-                <div class="reapir">
-                  <span class="name"> Ремонтные услуги </span>
-                  <span class="description"> Тестирование с выдачей технического заключения </span>
-                </div>
-                <div class="price">
-                  <span class="name"> Цена </span>
-                  <span class="description"> Бесплатно </span>
-                </div>
-                <div class="date">
-                  <span class="name"> Срок </span>
-                  <span class="description"> 30-120 мин </span>
-                </div>
+                <span class="product__reapir"> </span>
+                <span class="product__price"> </span>
+                <span class="product__date"> </span>
+                <button class="order-button"> Заказать </button>
+              </li>
+              <li class="product__card swiper-slide">
+                <span class="product__reapir"> </span>
+                <span class="product__price"> </span>
+                <span class="product__date"> </span>
                 <button class="order-button"> Заказать </button>
               </li>
             </ul>
@@ -384,8 +343,8 @@
         </div>
         <div class="vat">
           <div class="vat__inner">
-            <p class="vat__text"> Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку. </p>
-            <a class="vat__comercial" href="#"> Получить коммерческое предложение </a>
+            <p class="vat__text"></p>
+            <a class="vat__comercial" href="#"></a>
           </div>
         </div>
         <footer class="footer">

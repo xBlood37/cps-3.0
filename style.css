@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background-color: #fff; }
   .header__nav {
@@ -10,10 +11,55 @@
     list-style-type: none;
     margin: 0;
     padding: 0; }
+  .header__item:nth-child(2) {
+    display: none;
+    content: ' ';
+    width: 2px;
+    height: 32px;
+    background-color: #a9a9a987;
+    border-radius: 1px; }
+  .header__item:nth-child(3) {
+    margin-right: 0; }
+  .header__item:nth-child(4) {
+    display: inline-block;
+    content: ' ';
+    width: 2px;
+    height: 32px;
+    background-color: #a9a9a987;
+    border-radius: 1px; }
+  .header__item:nth-child(5) {
+    display: none; }
+  .header__item:nth-child(6) {
+    display: none; }
+  .header__item:nth-child(7) {
+    display: none; }
+  .header__item:nth-child(8) {
+    display: none;
+    content: ' ';
+    width: 2px;
+    height: 32px;
+    background-color: #a9a9a987;
+    border-radius: 1px; }
 
 @media (min-width: 1200px) {
-  .header--block {
+  .header {
     display: none; } }
+
+@media (min-width: 768px) {
+  .header__item:nth-child(2) {
+    display: inline-block; }
+  .header__item:nth-child(3) {
+    margin-right: auto; }
+  .header__item:nth-child(4) {
+    display: none; }
+  .header__item:nth-child(5) {
+    display: block; }
+  .header__item:nth-child(6) {
+    display: block; }
+  .header__item:nth-child(7) {
+    display: block; }
+  .header__item:nth-child(8) {
+    display: inline-block; } }
 
 .title__inner {
   display: flex;
@@ -31,6 +77,10 @@
   display: flex;
   align-items: center;
   gap: 8px; }
+  .title__item:nth-child(1)::before {
+    content: 'Оставить заявку'; }
+  .title__item:nth-child(2)::before {
+    content: 'Статус ремонта'; }
 
 .title__button {
   display: none; }
@@ -69,6 +119,11 @@
   margin: 0;
   list-style-type: none; }
 
+@media (min-width: 1200px) {
+  .scroll__list {
+    overflow: hidden;
+    flex-wrap: wrap; } }
+
 .scroll__item {
   scroll-snap-align: start;
   padding: 5px;
@@ -90,6 +145,19 @@
 
 .post__text {
   padding: 16px; }
+  .post__text .text:nth-child(2) {
+    display: none; }
+  .post__text .text:nth-child(3) {
+    display: none; }
+  .post__text .text:nth-child(4) {
+    display: none; }
+  @media (min-width: 768px) {
+    .post__text .text:nth-child(2) {
+      display: block; }
+    .post__text .text:nth-child(3) {
+      display: block; }
+    .post__text .text:nth-child(4) {
+      display: block; } }
 
 @media (min-width: 676px) {
   .post__inner {
@@ -130,6 +198,17 @@
     display: inline-block;
     padding: 3px;
     vertical-align: middle; }
+  .more:nth-child(2) {
+    display: none;
+    margin-left: 16px; }
+  .more:nth-child(3) {
+    display: none;
+    margin-left: 16px; }
+  @media (min-width: 768px) {
+    .more:nth-child(2) {
+      display: block; }
+    .more:nth-child(3) {
+      display: block; } }
 
 .h2 {
   padding: 16px;
@@ -145,39 +224,16 @@
 .vat__inner {
   padding: 16px; }
 
-.vat__comercial {
+.vat__text::after {
+  content: 'Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку. '; }
+
+.vat__comercial::after {
   font-family: 'TT Lakes Medium';
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #000; }
-
-.margin-right {
-  margin-right: 0; }
-
-.margin-left {
-  margin-left: 16px; }
-
-.display-block {
-  display: none; }
-
-@media (min-width: 768px) {
-  .margin-right {
-    margin-right: auto; }
-  .display-block {
-    display: block; } }
-
-.display-block--1000 {
-  display: none; }
-
-.display-none {
-  display: block; }
-
-@media (min-width: 1018px) {
-  .display-block--1000 {
-    display: block; }
-  .display-none {
-    display: none; } }
+  color: #000;
+  content: 'Получить коммерческое предложение'; }
 
 .swiper-pagination {
   position: relative; }
@@ -204,25 +260,50 @@
     transform: scale(1.01);
     transition: 0.3s; }
 
-.name {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-  color: #7e7e82; }
-
-.description {
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px; }
-
-.reapir {
+.product__reapir {
   grid-area: repair; }
+  .product__reapir::before {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    content: 'Ремонтные услуги'; }
+  .product__reapir::after {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    content: 'Тестирование с выдачей технического заключения'; }
 
-.price {
+.product__price {
   grid-area: price; }
+  .product__price::before {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    content: 'Цена'; }
+  .product__price::after {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    content: 'Бесплатно'; }
 
-.date {
+.product__date {
   grid-area: date; }
+  .product__date::before {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    content: 'Срок'; }
+  .product__date::after {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    content: '30-120 мин'; }
 
 @media (min-width: 768px) {
   .product__list {
@@ -414,12 +495,21 @@
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
   transition: 0.3s;
   transform: translateX(-100%); }
-  .sidebar-header__inner {
+  .sidebar-header__list {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 16px;
-    padding-bottom: 24px; }
+    padding-bottom: 24px;
+    list-style-type: none;
+    margin: 0; }
+  .sidebar-header__item:nth-child(1) {
+    display: block; }
+  .sidebar-header__item:nth-child(2) {
+    margin-right: auto; }
+  @media (min-width: 1200px) {
+    .sidebar-header__item:nth-child(1) {
+      display: none; } }
   .sidebar__menu {
     padding: 16px; }
   .sidebar__list {
@@ -449,7 +539,7 @@
       background-color: #ff3e79;
       border-radius: 20px; }
 
-.lang__item {
+.lang__inner {
   padding-top: 12px;
   padding-left: 8px; }
 
@@ -458,7 +548,14 @@
   border: none;
   padding: 8px;
   opacity: 0.5;
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.1s ease-in-out;
+  cursor: pointer; }
+  .lang__button:nth-child(1)::before {
+    content: 'RU'; }
+  .lang__button:nth-child(2)::before {
+    content: 'ЧЕ?'; }
+  .lang__button:nth-child(3)::before {
+    content: 'EN'; }
   .lang__button:hover {
     opacity: 1; }
 
@@ -547,6 +644,7 @@
 
 .order-button {
   border: none;
+  cursor: pointer;
   border-radius: 20px;
   margin-top: 20px;
   background-color: #ff3e79;
