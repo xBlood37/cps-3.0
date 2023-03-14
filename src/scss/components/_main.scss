@@ -222,21 +222,12 @@
     padding: 16px;
   }
 
-  &__text {
-    &::after {
-      content: 'Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку. ';
-    }
-  }
-
   &__comercial {
-    &::after {
-      font-family: 'TT Lakes Medium';
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      color: #000;
-      content: 'Получить коммерческое предложение';
-    }
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #000;
   }
 }
 
