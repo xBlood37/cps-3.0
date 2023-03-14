@@ -1,10 +1,12 @@
-const call = document.querySelector('#call')
+const call = document.querySelectorAll('.call')
 const callClose = document.querySelector('#call-close')
 const getCall = document.querySelector('.get-call')
 
 function getCallModal() {
-  call.addEventListener('click', (e) => {
-    getCall.classList.toggle('get-call--active')
+  call.forEach((item) => {
+    item.addEventListener('click', () => {
+      getCall.classList.add('get-call--active')
+    })
   })
 
   callClose.addEventListener('click', (e) => {

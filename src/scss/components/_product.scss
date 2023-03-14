@@ -32,19 +32,6 @@
   }
 }
 
-.order-button {
-  border: none;
-  border-radius: 20px;
-  margin-top: 20px;
-  background-color: #ff3e79;
-  color: #ffffff;
-  @include size(120px, 32px);
-
-  &:hover {
-    background-color: #ab2a51;
-  }
-}
-
 .name {
   display: block;
   font-size: 14px;
@@ -84,9 +71,5 @@
       width: 100%;
       height: 80px;
     }
-  }
-
-  .order-button {
-    margin-top: 0px;
   }
 }
