@@ -16,12 +16,31 @@
   transition: 0.3s;
   transform: translateX(-100%);
 
-  &-header__inner {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px;
-    padding-bottom: 24px;
+  &-header {
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+      padding-bottom: 24px;
+      list-style-type: none;
+      margin: 0;
+    }
+
+    &__item {
+      &:nth-child(1) {
+        display: block;
+      }
+      &:nth-child(2) {
+        margin-right: auto;
+      }
+
+      @media (min-width: 1200px) {
+        &:nth-child(1) {
+          display: none;
+        }
+      }
+    }
   }
 
   &__menu {
@@ -66,7 +85,7 @@
 }
 
 .lang {
-  &__item {
+  &__inner {
     padding-top: 12px;
     padding-left: 8px;
   }
@@ -77,6 +96,17 @@
     padding: 8px;
     opacity: 0.5;
     transition: all 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:nth-child(1)::before {
+      content: 'RU';
+    }
+    &:nth-child(2)::before {
+      content: 'ЧЕ?';
+    }
+    &:nth-child(3)::before {
+      content: 'EN';
+    }
 
     &:hover {
       opacity: 1;

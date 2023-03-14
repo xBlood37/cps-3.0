@@ -30,31 +30,66 @@
       transition: 0.3s;
     }
   }
-}
 
-.name {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-  color: #7e7e82;
-}
+  &__reapir {
+    &::before {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      content: 'Ремонтные услуги';
+    }
 
-.description {
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-}
+    &::after {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      content: 'Тестирование с выдачей технического заключения';
+    }
 
-.reapir {
-  grid-area: repair;
-}
+    grid-area: repair;
+  }
 
-.price {
-  grid-area: price;
-}
+  &__price {
+    &::before {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      content: 'Цена';
+    }
 
-.date {
-  grid-area: date;
+    &::after {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      content: 'Бесплатно';
+    }
+
+    grid-area: price;
+  }
+
+  &__date {
+    &::before {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      content: 'Срок';
+    }
+
+    &::after {
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      content: '30-120 мин';
+    }
+
+    grid-area: date;
+  }
 }
 
 @media (min-width: 768px) {
