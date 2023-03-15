@@ -251,10 +251,6 @@
   border-radius: 6px;
   width: 240px;
   height: 200px; }
-  .product__card:hover {
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.1);
-    transform: scale(1.01);
-    transition: 0.3s; }
 
 .product__reapir {
   grid-area: repair; }
@@ -264,12 +260,6 @@
     line-height: 16px;
     color: #7e7e82;
     content: 'Ремонтные услуги'; }
-  .product__reapir::after {
-    display: block;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    content: 'Тестирование с выдачей технического заключения'; }
 
 .product__price {
   grid-area: price; }
@@ -279,12 +269,6 @@
     line-height: 16px;
     color: #7e7e82;
     content: 'Цена'; }
-  .product__price::after {
-    display: block;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    content: 'Бесплатно'; }
 
 .product__date {
   grid-area: date; }
@@ -294,12 +278,6 @@
     line-height: 16px;
     color: #7e7e82;
     content: 'Срок'; }
-  .product__date::after {
-    display: block;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    content: '30-120 мин'; }
 
 @media (min-width: 768px) {
   .product__list {
